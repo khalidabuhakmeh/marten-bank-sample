@@ -4,7 +4,7 @@ This is a realy simple banking example using [Marten](https://github.com/JasperF
 
 ## Getting Started
 
-You just need the new ASP.NET Core Tooling and [PostgreSQL]() installed and then run the following commands.
+You just need the new [.NET Core Tooling](https://dot.net) and [PostgreSQL](https://www.postgresql.org/) installed and then run the following commands.
 
 ```command
 > dotnet restore
