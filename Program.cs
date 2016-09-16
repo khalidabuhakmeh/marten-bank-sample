@@ -21,7 +21,7 @@ namespace Accounting
                     typeof(AccountDebited)
                 });
 
-                _.Events.AggregateStreamsInlineWith<Account>();
+                _.Events.InlineProjections.AggregateStreamsWith<Account>();
             });
 
             var khalid = new AccountCreated
