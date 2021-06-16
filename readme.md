@@ -11,7 +11,7 @@ You just need the new [.NET Core Tooling](https://dot.net) and [PostgreSQL](http
 > dotnet run 
 ```
 
-Note: Remember to create the necessary database.
+Note: Remember to create the necessary database. You can use the docker-compose to spin up a test database.
 
 You should see the following output:
 
