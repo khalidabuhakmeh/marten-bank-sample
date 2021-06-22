@@ -4,7 +4,7 @@ namespace Accounting.Events
 {
     public class AccountCreated {
         public AccountCreated() {
-            CreatedAt = DateTime.UtcNow;
+            CreatedAt = DateTime.UtcNow.AddDays(-10);
         }
         public string Owner { get;set; }
         public Guid AccountId { get;set; }        

@@ -1,3 +1,5 @@
+using System;
+
 namespace Accounting.Events
 {
     public class AccountDebited : Transaction
@@ -5,6 +7,11 @@ namespace Accounting.Events
         public override void Apply(Account account)
         {
             account.Balance -= Amount;
+        }
+
+        public override void Apply(Income income)
+        {
+            throw new NotImplementedException("Not Valid");
         }
 
         public AccountCredited ToCredit()

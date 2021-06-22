@@ -6,7 +6,12 @@ namespace Accounting.Events
           account.Balance += Amount;
       }
 
-      public AccountDebited ToDebit() {
+      public override void Apply(Income income)
+      {
+          income.TotalIncome += Amount;
+      }
+
+        public AccountDebited ToDebit() {
           return new AccountDebited {
               Amount = Amount,
               To = From,

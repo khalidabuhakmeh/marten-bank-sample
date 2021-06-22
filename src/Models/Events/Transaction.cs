@@ -19,5 +19,6 @@ namespace Accounting.Events
         public decimal Amount { get; set; }
 
         public abstract void Apply(Account account);
+        public abstract void Apply(Income income);
     }
 }

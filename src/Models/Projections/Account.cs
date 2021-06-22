@@ -21,7 +21,7 @@ namespace Accounting
             CreatedAt = UpdatedAt = created.CreatedAt;
 
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
-            Console.WriteLine($"Account created for {Owner} with Balance of {Balance.ToString("C")}");
+            Console.WriteLine($"Account created for {Owner} with TotalIncome of {Balance.ToString("C")}");
         }
 
         public bool HasSufficientFunds(AccountDebited debit)
